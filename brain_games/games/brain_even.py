@@ -4,7 +4,7 @@ from brain_games.games.game_engine import play_game
 import random
 
 
-def even_game():
+def start_even_game():
     def question_answer():
         number = random.randint(1, 100)
         return str(number), 'yes' if number % 2 == 0 else 'no'
@@ -14,4 +14,4 @@ def even_game():
 
 
 if __name__ == "__main__":
-    even_game()
+    start_even_game()

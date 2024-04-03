@@ -36,7 +36,7 @@ def play_round(get_question_and_answer, user_name):
 
 
 def print_incorrect_message(user_answer, user_name, correct_answer):
-    print(f"'{user_answer}' is wrong answer ;(."
+    print(f"'{user_answer}' is wrong answer ;(. "
           f"Correct answer was '{correct_answer}'.")
     print(f"Let's try again, {user_name}!")
     return False

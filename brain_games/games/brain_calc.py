@@ -5,7 +5,7 @@ import random
 import operator
 
 
-def calc_game():
+def start_calc_game():
     def question_answer():
         num1 = random.randint(1, 10)
         num2 = random.randint(1, 10)
@@ -22,4 +22,4 @@ def calc_game():
 
 
 if __name__ == "__main__":
-    calc_game()
+    start_calc_game()
