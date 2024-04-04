@@ -1,6 +1,5 @@
-#!/usr/bin/env python3
-
-from brain_games.games.game_engine import play_game
+from brain_games.consts import GCD_GAME_DESCRIPTION
+from brain_games.engine import play_game
 import random
 import math
 
@@ -12,5 +11,4 @@ def start_gcd_game():
         gcd = math.gcd(num1, num2)
         return nums_pair, str(gcd)
 
-    play_game('Find the greatest common '
-              'divisor of given numbers.', question_answer)
+    play_game(GCD_GAME_DESCRIPTION, question_answer)

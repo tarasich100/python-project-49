@@ -1,6 +1,5 @@
-#!/usr/bin/env python3
-
-from brain_games.games.game_engine import play_game
+from brain_games.consts import CALC_GAME_DESCRIPTION
+from brain_games.engine import play_game
 import random
 import operator
 
@@ -18,4 +17,4 @@ def start_calc_game():
         )
         return f"{num1} {op_func} {num2}", str(op(num1, num2))
 
-    play_game('What is the result of the expression?', question_answer)
+    play_game(CALC_GAME_DESCRIPTION, question_answer)
