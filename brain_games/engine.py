@@ -4,10 +4,7 @@ def play_game(game_description, get_question_and_answer):
     print(game_description)
     for _ in range(3):
         if not play_round(get_question_and_answer, user_name):
-            break
-        else:
-            print(f'Congratulations, {user_name}!')
-            game_is_finished = True
+            return
 
 
 def welcome_user():
