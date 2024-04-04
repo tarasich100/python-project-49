@@ -1,14 +1,10 @@
-#!/usr/bin/env python3
-
 def play_game(game_description, get_question_and_answer):
     welcome_user()
     user_name = get_user_name()
     print(game_description)
-    game_is_finished = False
-    while not game_is_finished:
-        for _ in range(3):
-            if not play_round(get_question_and_answer, user_name):
-                break
+    for _ in range(3):
+        if not play_round(get_question_and_answer, user_name):
+            break
         else:
             print(f'Congratulations, {user_name}!')
             game_is_finished = True
@@ -32,7 +28,8 @@ def play_round(get_question_and_answer, user_name):
         print('Correct!')
         return True
     else:
-        return print_incorrect_message(user_answer, user_name, correct_answer)
+        print_incorrect_message(user_answer, user_name, correct_answer)
+        return False
 
 
 def print_incorrect_message(user_answer, user_name, correct_answer):
