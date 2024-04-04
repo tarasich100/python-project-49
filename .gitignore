@@ -1,4 +1,5 @@
 .venv
 .venv/
 .idea/
+dist/
 brain_games/**/*.pyc
