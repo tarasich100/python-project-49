@@ -5,6 +5,7 @@ def play_game(game_description, get_question_and_answer):
     for _ in range(3):
         if not play_round(get_question_and_answer, user_name):
             return
+    print(f'Congratulations, {user_name}!')
 
 
 def welcome_user():
