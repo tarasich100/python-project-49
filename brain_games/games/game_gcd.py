@@ -12,8 +12,5 @@ def start_gcd_game():
         gcd = math.gcd(num1, num2)
         return nums_pair, str(gcd)
 
-    play_game('Find the greatest common divisor of given numbers.', question_answer)
-
-
-if __name__ == "__main__":
-    start_gcd_game()
+    play_game('Find the greatest common '
+              'divisor of given numbers.', question_answer)

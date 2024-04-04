@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Simple math games"
 authors = ["tarasich100 <tarasich100@gmail.com>"]
 readme = "README.md"
 packages = [
@@ -10,9 +10,9 @@ packages = [
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-brain-even = "brain_games.games.brain_even:start_even_game"
-brain-calc = "brain_games.games.brain_calc:start_calc_game"
-brain-gcd = "brain_games.games.brain_gcd:start_gcd_game"
+brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"

@@ -11,7 +11,3 @@ def start_even_game():
 
     play_game('Answer "yes" if the number is even, '
               'otherwise answer "no".', question_answer)
-
-
-if __name__ == "__main__":
-    start_even_game()

@@ -40,7 +40,3 @@ def print_incorrect_message(user_answer, user_name, correct_answer):
           f"Correct answer was '{correct_answer}'.")
     print(f"Let's try again, {user_name}!")
     return False
-
-
-if __name__ == '__main__':
-    play_game()

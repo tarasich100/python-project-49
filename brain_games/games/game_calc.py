@@ -19,7 +19,3 @@ def start_calc_game():
         return f"{num1} {op_func} {num2}", str(op(num1, num2))
 
     play_game('What is the result of the expression?', question_answer)
-
-
-if __name__ == "__main__":
-    start_calc_game()
