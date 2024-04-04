@@ -3,7 +3,6 @@ from brain_games.engine import play_game
 import random
 
 
-
 def start_even_game():
     def question_answer():
         number = random.randint(1, 100)

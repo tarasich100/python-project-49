@@ -1,13 +1,13 @@
-from brain_games.consts import PROGRESSION_GAME_DESCRIPTION
+from brain_games.consts import (PROGRESSION_GAME_DESCRIPTION,
+                                MIN_PROGRESSION_LENGTH,
+                                MAX_PROGRESSION_LENGTH)
 from brain_games.engine import play_game
 import random
 
-MIN_PROGRESSION_LENGTH = 5
-MAX_PROGRESSION_LENGTH = 10
+
 PROGRESSION_LENGTH_RANGE = (MIN_PROGRESSION_LENGTH, MAX_PROGRESSION_LENGTH)
 START_RANGE = (0, 10)
 STEP_RANGE = (1, 10)
-
 
 
 def generate_progression():
