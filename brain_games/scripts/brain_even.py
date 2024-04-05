@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from brain_games.games.game_even import start_even_game
 
 

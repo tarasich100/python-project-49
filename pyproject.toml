@@ -3,6 +3,11 @@ name = "hexlet-code"
 version = "0.1.0"
 description = "Simple math games"
 authors = ["tarasich100 <tarasich100@gmail.com>"]
+repository = "https://github.com/tarasich100/python-project-49"
+classifiers = [
+    "Intended Audience :: Education",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Python Modules"]
 readme = "README.md"
 packages = [
   { include = "brain_games" },
