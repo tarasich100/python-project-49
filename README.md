@@ -4,7 +4,7 @@
 [![Actions Status](https://github.com/tarasich100/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/tarasich100/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/05b05ef2c307951ffbd2/maintainability)](https://codeclimate.com/github/tarasich100/python-project-49/maintainability)
 
-**Brain Games is a collection of five games that boost brain function. Each game consists of three questions.  The game ends after three consecutive correct answers.  If you provide an incorrect answer, you will need to start again from the beginning.**
+**Brain Games is a collection of five games that boosts brain function. Each game consists of three questions.  The game ends after three consecutive correct answers.  If you provide an incorrect answer, you will need to start again from the beginning.**
 
 ### The following games are presented:
 - Even-Game. Definition of an even number.
@@ -25,7 +25,7 @@ make package-install
 ## Games
 
 ### Even-Game
-_The number's parity must be determined._
+_Deternine number's parity._
 
 **Starting the game**
 

@@ -1,3 +1,4 @@
+NUMBER_OF_ROUNDS = 3
 EVEN_GAME_DESCRIPTION = ('Answer "yes" if the number is even, '
                          'otherwise answer "no".')
 CALC_GAME_DESCRIPTION = 'What is the result of the expression?'
