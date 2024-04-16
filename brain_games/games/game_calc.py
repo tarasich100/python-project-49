@@ -4,17 +4,20 @@ import random
 import operator
 
 
-def start_calc_game():
-    def question_answer():
-        num1 = random.randint(1, 10)
-        num2 = random.randint(1, 10)
-        op, op_func = (
-            random.choice(
-                [(operator.add, '+'),
-                 (operator.sub, '-'),
-                 (operator.mul, '*')]
-            )
+def generate_round():
+    num1 = random.randint(1, 10)
+    num2 = random.randint(1, 10)
+    op, op_func = (
+        random.choice(
+            [(operator.add, '+'),
+             (operator.sub, '-'),
+             (operator.mul, '*')]
         )
-        return f"{num1} {op_func} {num2}", str(op(num1, num2))
+    )
+    question = f"{num1} {op_func} {num2}"
+    answer = str(op(num1, num2))
+    return [question, answer]
 
-    play_game(CALC_GAME_DESCRIPTION, question_answer)
+
+def start_calc_game():
+    play_game(CALC_GAME_DESCRIPTION, generate_round)

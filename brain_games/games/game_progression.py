@@ -10,23 +10,21 @@ START_RANGE = (0, 10)
 STEP_RANGE = (1, 10)
 
 
-def generate_progression():
-    length = random.randint(*PROGRESSION_LENGTH_RANGE)
+def generate_progression(start, step, length):
+    return [start + x * step for x in range(length)]
+
+
+def generate_round():
     start = random.randint(*START_RANGE)
     step = random.randint(*STEP_RANGE)
-    progr = []
-    for i in range(length):
-        progr.append(start + step * i)
-    return progr
+    length = random.randint(*PROGRESSION_LENGTH_RANGE)
+    progression = generate_progression(start, step, length)
+    missing_position = random.randint(0, len(progression) - 1)
+    answer = str(progression[missing_position])
+    progression[missing_position] = '..'
+    question = ' '.join(map(str, progression))
+    return [question, answer]
 
 
 def start_progression_game():
-    def question_answer():
-        progression = generate_progression()
-        missing_position = random.randint(0, len(progression) - 1)
-        correct_answer = progression[missing_position]
-        progression[missing_position] = '..'
-        question = ' '.join(map(str, progression))
-        return question, str(correct_answer)
-
-    play_game(PROGRESSION_GAME_DESCRIPTION, question_answer)
+    play_game(PROGRESSION_GAME_DESCRIPTION, generate_round)
